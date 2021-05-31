@@ -97,6 +97,22 @@ namespace WhatAnime_TelegramBot_.Models.Bot
             public string File_Unique_Id { get; set; }
             public int File_Size { get; set; }
         }
+        public class Option
+        {
+            public string Text { get; set; }
+            public int Voter_Count { get; set; }
+        }
+        public class Poll
+        {
+            public string Id { get; set; }
+            public string Question { get; set; }
+            public List<Option> Options { get; set; }
+            public int Total_Voter_Count { get; set; }
+            public bool Is_Closed { get; set; }
+            public bool Is_Anonymous { get; set; }
+            public string Type { get; set; }
+            public bool Allows_Multiple_Answers { get; set; }
+        }
         public class Sticker
         {
             public int Width { get; set; }
