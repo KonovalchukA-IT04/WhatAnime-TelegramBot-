@@ -10,7 +10,7 @@ namespace WhatAnime_TelegramBot_.Help_tools
         {
             string[] ar = list.Split('\n');
             if (num > ar.Length || num < 1)
-                return null;
+                return list;
             ar = ar.Where(val => val != ar[num - 1]).ToArray();
             list = String.Join("\n", ar);
             return list;
