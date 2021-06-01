@@ -27,9 +27,9 @@ namespace WhatAnime_TelegramBot_.Models
             public string image_url { get; set; }
             public string title { get; set; }
             public string title_english { get; set; }
-            public int episodes { get; set; }
+            public int? episodes { get; set; }
             public Aired aired { get; set; }
-            public double score { get; set; }
+            public double? score { get; set; }
             public string synopsis { get; set; }
             public List<Genre> genres { get; set; }
         }
